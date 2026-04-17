@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <head>
+        <meta charset="UTF-8">
+        <title>台灣縣市連動</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+    </head>
+    <body>
+        <div id="app">
+            <h2>台灣縣市連動</h2>
+            <!-- <button @click="loadCities">載入縣市</button>
+            <br><br><br><br><br><br><br><br><br> -->
+
+            <label for="city">縣市:</label>
+            <select id="city" v-model="selectedCity" @change="loadDistricts">
+                <option value="">請選擇縣市</option>
+                <option v-for="city in cities" :key="city" :value="city">{{ city }}
+                </option>
+            </select>
+            <br><br>
+
+            <label for="district">區域</label>
+            <select id="district" v-model="selectedDistrict">
+                <option value="">請選擇區域</option>
+                <option v-for="district in districts" :key="district" :value="district">{{ district }}                   
+                </option>
+            </select>
+            <p>你選的縣市:{{ selectedCity}}</p>
+            <p>你選的區域:{{ selectedDistrict}}</p>
+        </div>
+
+        <script src="./js/app.js"></script>
+    </body>
+</html>    
+

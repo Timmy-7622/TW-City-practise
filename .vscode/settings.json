@@ -1,0 +1,5 @@
+{
+  "java.project.sourcePaths": ["backend/ajaxdemo/src"],
+  "java.project.referencedLibraries": ["backend/ajaxdemo/lib/**/*.jar"],
+  "liveServer.settings.port": 5660
+}
